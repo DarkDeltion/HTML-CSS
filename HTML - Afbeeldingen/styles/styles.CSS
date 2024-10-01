@@ -1,0 +1,37 @@
+/* Reset some default padding and margin for better control */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body to make things look a bit nicer */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Styling for the unordered list (ul) */
+ul {
+    list-style-position: inside; /* Ensures bullets are inside the list's content */
+    padding-left: 20px;          /* Adjust this for bullet spacing */
+    margin-top: 10px;            /* Adds space above the list */
+}
+
+/* Individual list items */
+li {
+    font-size: 18px;             /* Controls the text size */
+    line-height: 1.6;            /* Controls the spacing between lines */
+    text-align: left;            /* Ensures text is aligned to the left */
+    margin-bottom: 10px;         /* Adds space between each list item */
+}
+
+/* Optional: Style the container of the list */
+.list-container {
+    max-width: 600px;            /* Sets a max-width to prevent it from being too wide */
+    background-color: #fff;      /* White background */
+    padding: 20px;               /* Adds padding inside the container */
+    border-radius: 10px;         /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
