@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo JS-formulier</title>
+    <style>
+		/* hier staat opmaak die verwijzen naar: classes, tag's en id's    */
+		.form input, .form button{
+			margin: 		3px;
+		}
+		label {
+			display: 		inline-block;
+			width:			90px;
+		}
+		#result {
+			background-color: silver;
+			width:			  15%;
+			height:			  100px;
+		}
+    </style>
+</head>
+<body>
+	<h1>JS-formuier</h1>
+	<div class="form">
+		<label>getal 1:</label>
+		<input type="number" id="getal1"  class="" placeholder="getal invoeren"/>
+		<br>
+        <label>getal 2:</label>
+		<input type="number" id="getal2"  class="" placeholder="getal invoeren"/>
+        <br>
+		<label>verzend knop</label>
+		<button onclick="myValuePlus1()" style="background-color: #4be533" />Doe iets</button><br>
+        <br>
+	</div>
+	<div id="result"></div>
+
+	<script>
+	  function myValuePlus1() 	{
+		//console.log('wellkom in myValue');
+
+		let r1 = Number(document.getElementById("getal1").value);
+        let r2 = Number(document.getElementById("getal2").value)
+		let result = '';
+		result = r1 + " keer " + r2 + " is " +(r1 * r2);
+		document.getElementById("result").innerHTML = result
+	  }
+	</script>
+</body>
+</html>
